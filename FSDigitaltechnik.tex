@@ -236,10 +236,10 @@ $Bit \xrightarrow{\cdot 8} Byte \xrightarrow{\cdot 1024} kByte \xrightarrow{\cdo
 		Primimplikanten & $MPI = \iset{p \in MI}{p \not\subset c \ \forall c \in MI}$ & $MPI \subseteq MI \subseteq MC$\\
 	\end{tabular}\\ \\ \\ \\
 	\begin{tabular}{l|l|l}	
-		DNF (SOP) & eine Summe von Produkttermen & Terme sind ODER-verknüpft \\
-		KNF (POS) & ein Produkt von Summentermen & Terme sind UND-verknüpft\\
-		KDNF (CSOP)& Summe aller Minterme & WT: 1-Zeilen sind Minterme\\
-		KKNF (CPOS)& Menge aller Maxterme & WT: 0-Zeilen negiert sind Maxterme \\
+		DNF (SOP) & eine Summe von Produkttermen & Terme sind ODER-verknüpft  \\
+		KNF (POS) & ein Produkt von Summentermen & Terme sind UND-verknüpft \\
+		KDNF (CSOP)& Summe aller Minterme $\sum m_i$& WT: 1-Zeilen sind Minterme\\
+		KKNF (CPOS)& Produkt aller Maxterme $\prod M_i$& WT: 0-Zeilen negiert sind Maxterme \\
 		VollSOP (nur 1)& Menge aller Primimplikanten & Bestimmung siehe Quine Methode\\
 		& & oder Schichtenalgorithmus\\
 		MinSOP (min. 1)& Minimale Summe v. Primimplikanten & durch Überdeckungstabelle \\
