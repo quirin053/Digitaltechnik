@@ -193,7 +193,11 @@ $Bit \xrightarrow{\cdot 8} Byte \xrightarrow{\cdot 1024} kByte \xrightarrow{\cdo
 		            & $x + \overline{x} = 1$                                & $A \cup \overline{A} = G$                             \\
 		            & $\overline{\overline{x}} = x$                         & $\overline{\overline{A}} = A$                         \\
 		De Morgan   & $\overline{x \cdot y} = \overline{x} + \overline{y}$  & $\overline{A \cap B} = \overline{A} \cup \overline{B}$\\
-		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$ & $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$ 	& $\overline{A \cup B} = \overline{A} \cap \overline{B}$\\ \hline
+		\textbf{Resolution}	&Produktterm											&Summenterm												\\
+		Speziell	& $x\cdot a + \overline x \cdot a = a$ 					&$\left(x+a\right)\cdot\left(\overline{x}+a\right) = a$	\\
+		Allgemein	& \multicolumn{2}{l}{$x\cdot a+\overline{x}\cdot b = x \cdot a + \overline{x} \cdot b + a \cdot b$} 			\\
+					& \multicolumn{2}{r}{$\left(x + a\right)\cdot \left(\overline{x}+b\right)=\left(x + a\right)\cdot \left(\overline{x}+b\right)\cdot\left(a+b\right)$}	\\
 	\end{tabular}
 
 
@@ -229,12 +233,12 @@ $Bit \xrightarrow{\cdot 8} Byte \xrightarrow{\cdot 1024} kByte \xrightarrow{\cdo
 		Wichtige Begriffe: & Definition & Bemerkung\\ \hline
 		Signalvariable & $x$ & $\hat x \in \eset{0,1}$ \\
 		Literal & $l_i = x_i$ oder $\overline{x_i}$ & $i \in I_0=\eset{1,...,n}$\\
-		Minterme,0-Kuben & M0C $\ni m_j = \prod\limits_{i\in I_0} l_i$ & $|$M0C$| = 2^n$ \\
+		Minterme, 0-Kuben & M0C $\ni m_j = \prod\limits_{i\in I_0} l_i$ & $|$M0C$| = 2^n$ \\
 		d-Kuben & MC $\ni c_j = \prod\limits_{i\in I_j \subseteq I_0} l_i$ & $|$MC$|=3^n$\\
 		Distanz & $\delta(c_i,c_j) = \bigl| \iset{l}{l \in c_i \land \overline{l}\in c_j}  \bigr|$ & $\delta_{ij} = \delta(c_i,c_j)$ \\
 		Implikanten & $MI = \iset{c \in MC}{c \subseteq f}$ &  \\
 		Primimplikanten & $MPI = \iset{p \in MI}{p \not\subset c \ \forall c \in MI}$ & $MPI \subseteq MI \subseteq MC$\\
-	\end{tabular}\\ \\ \\ \\
+	\end{tabular}\\ 
 	\begin{tabular}{l|l|l}	
 		DNF (SOP) & eine Summe von Produkttermen & Terme sind ODER-verknüpft  \\
 		KNF (POS) & ein Produkt von Summentermen & Terme sind UND-verknüpft \\
